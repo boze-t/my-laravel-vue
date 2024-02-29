@@ -1,0 +1,23 @@
+extends:
+    # eslintデフォルト推奨ルール
+  - 'eslint:recommended'
+    # vue3推奨のルール
+  - 'plugin:vue/vue3-recommended'
+    # prettierのルール
+  - 'prettier'
+  - "plugin:@typescript-eslint/recommended"
+
+env:
+  browser: true
+  es2021: true
+  # setup関数内でのコンパイラマクロをサポート
+  vue/setup-compiler-macros: true
+
+parser: "vue-eslint-parser"
+
+parserOptions:
+  ecmaVersion: latest
+  parser: '@typescript-eslint/parser'
+
+rules: {}
+
